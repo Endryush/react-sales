@@ -1,4 +1,5 @@
-import React from 'react';
+import { BaseButton } from '../BaseComponents/Button/BaseButton';
+import BaseInput from '../BaseComponents/Input/BaseInput';
 import './Login.scss';
 
 export default function Login() {
@@ -7,27 +8,8 @@ export default function Login() {
       <div className="login__box">
         <h2 className="login__box--title">Login</h2>
         <form className="login__box--form">
-          <label className="login__box--form-label" htmlFor="email">
-            Email:
-          </label>
-          <input
-            className="login__box--form-input"
-            type="email"
-            id="email"
-            name="email"
-            required
-          />
-
-          <label className="login__box--form-label" htmlFor="password">
-            Senha:
-          </label>
-          <input
-            className="login__box--form-input"
-            type="password"
-            id="password"
-            name="password"
-            required
-          />
+          <BaseInput name="email" type="email" label="Email:" required />
+          <BaseInput name="password" type="password" label="Senha:" required />
 
           <div className="login__box--form-checkbox">
             <input
@@ -47,15 +29,12 @@ export default function Login() {
           <a href="#" className="login__box--form-forgot-password-link">
             Esqueci a senha
           </a>
-
-          <button className="login__box--form-button" type="submit">
-            Login
-          </button>
+          <BaseButton text='Login' type='submit' />
         </form>
 
         <div className="login__box--form-signup-link">
           <p>
-            Ainda não tem uma conta?{' '}
+            Ainda não tem uma conta?
             <a className="login__bo--form-signup-link-text" href="#">
               Cadastrar-se
             </a>

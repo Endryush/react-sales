@@ -7,11 +7,15 @@
   height: 100vh;
 
   &__box {
-    width: 300px;
+    width: 350px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    @media screen and (max-width: 600px) {
+      width: 80%;
+    }
 
     &--title {
       text-align: center;
@@ -21,26 +25,6 @@
     &--form {
       display: flex;
       flex-direction: column;
-
-      &-label {
-        margin-bottom: 8px;
-        color: #333;
-      }
-
-      &-input {
-        padding: 10px;
-        margin-bottom: 16px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 14px;
-        color: #333; 
-
-        &:focus {
-          outline: none;
-          border-color: $primary-purple;
-          box-shadow: 0 0 5px $second-purple;
-        }
-      }
 
       &-checkbox {
         display: flex;
@@ -64,20 +48,6 @@
 
         &:hover {
           text-decoration: underline;
-        }
-      }
-
-      &-button {
-        padding: 12px;
-        background-color: $primary-purple;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-
-        &:hover {
-          background-color: $second-purple;
         }
       }
 

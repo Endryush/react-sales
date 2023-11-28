@@ -1,0 +1,15 @@
+@import '../../../styles/variables';
+
+.base-button{
+  padding: 12px;
+  background-color: $primary-purple;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $second-purple;
+  }
+}

@@ -31,13 +31,13 @@ export default function Login() {
 
           <div className="login__box--form-checkbox">
             <input
-              className="login__box--form-checkbox-input"
+              className="login__box--form-checkbox__input"
               type="checkbox"
               id="remember"
               name="remember"
             />
             <label
-              className="login__box--form-checkbox-label"
+              className="login__box--form-checkbox__label"
               htmlFor="remember"
             >
               Manter conectado

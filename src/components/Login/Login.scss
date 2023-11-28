@@ -1,0 +1,99 @@
+@import '../../styles/variables';
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &__box {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    &--title {
+      text-align: center;
+      color: $second-purple;
+    }
+
+    &--form {
+      display: flex;
+      flex-direction: column;
+
+      &__label {
+        margin-bottom: 8px;
+        color: #333;
+      }
+
+      &__input {
+        padding: 10px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        color: #333; 
+
+        &:active {
+          outline: none;
+          border-color: $primary-purple;
+          box-shadow: 0 0 5px $second-purple;
+        }
+      }
+
+      &-checkbox {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+
+        &__checkbox-input {
+          margin-right: 8px;
+        }
+
+        &__checkbox-label {
+          margin-bottom: 0;
+          color: #333;
+        }
+      }
+
+      &-forgot-password-link {
+        margin-bottom: 16px;
+        color: #1e90ff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &-button {
+        padding: 12px;
+        background-color: $primary-purple;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: $second-purple;
+        }
+      }
+
+      &-signup-link {
+        text-align: center;
+  
+        &__signup-link-text {
+          color: #1e90ff;
+          text-decoration: none;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+  }
+}

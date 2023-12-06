@@ -63,7 +63,14 @@
           }
         }
       }
+
+      &-field {
+        margin-bottom: 16px;
+      }
     }
 
+    &--error-message {
+      color: $error-color;
+    }
   }
 }
